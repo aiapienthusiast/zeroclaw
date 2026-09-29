@@ -526,10 +526,11 @@ api_key = "..."
 ```
 
 **Cheaper Inference**: slot `cheaperinference`. An OpenAI-compatible LLM
-gateway with one endpoint for models from several labs. Each model costs 15–60%
-less than the list price of its lab. The endpoint is
-`https://api.cheaperinference.com/v1` with bearer-token auth. Model IDs are bare,
-for example `gpt-5.4-mini`, `gpt-5.4`, `claude-sonnet-5`, or `gemini-3.1-pro`.
+gateway with one endpoint for models from several labs. Current models and
+prices are on [cheaperinference.com](https://cheaperinference.com/#models). The
+endpoint is `https://api.cheaperinference.com/v1` with bearer-token auth.
+Model IDs are bare, for example `gpt-5.4-mini`, `gpt-5.4`, `claude-sonnet-5`,
+or `gemini-3.1-pro`.
 The `/v1/models` endpoint requires a key. Key from
 [cheaperinference.com](https://cheaperinference.com/signup). Use the canonical
 `cheaperinference` slot only; `cheaper-inference` and `cheaper_inference` are
